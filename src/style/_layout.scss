@@ -117,13 +117,14 @@ header .menu-desktop {
 .faqContainer {
   margin-top: 10rem;
   width: 95%;
-  height: 70vh;
   margin-bottom: 5rem;
   display: flex;
 
+  // position: relative;
+
   & .reflectionContainer {
     width: 45%;
-    height: 100%;
+    height: auto;
 
     background-image: linear-gradient(
       to bottom,

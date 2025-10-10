@@ -88,13 +88,12 @@ header .menu-desktop ul li a.logo {
 .faqContainer {
   margin-top: 10rem;
   width: 95%;
-  height: 70vh;
   margin-bottom: 5rem;
   display: flex;
 }
 .faqContainer .reflectionContainer {
   width: 45%;
-  height: 100%;
+  height: auto;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   background-size: 130%;
   border-radius: 30px;
