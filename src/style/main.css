@@ -1,0 +1,281 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+header .menu-desktop {
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  margin-top: 2rem;
+}
+header .menu-desktop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+header .menu-desktop ul li {
+  margin: 0 1rem;
+}
+header .menu-desktop ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+  font-size: 1rem;
+  font-weight: 700;
+}
+header .menu-desktop ul li a:hover {
+  color: #22ab39;
+}
+header .menu-desktop ul li a.logo {
+  font-family: "Koulen", monospace;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.introducao {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.25) 18%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0.8) 100%), url("../images/mainImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  border-radius: 2rem;
+  border: 1px solid #606060;
+  margin-top: 1rem;
+  width: 95%;
+  height: 90vh;
+  display: flex;
+  align-items: end;
+}
+.introducao .informationArea {
+  margin: 0 0 5rem 2.5rem;
+}
+.introducao p {
+  width: 50%;
+}
+.introducao h1 {
+  font-family: "Bebas Neue", monospace;
+  font-size: 5rem;
+}
+.introducao h1 .highlight {
+  font-family: "Bebas Neue", monospace;
+}
+.introducao .nextArea {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #121212;
+  padding: 0.5rem 2rem;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #606060;
+  border-bottom: 0;
+  z-index: 2;
+}
+.introducao .nextArea img {
+  padding-top: 30%;
+  transition: 0.3s ease;
+  animation: bounce 1.5s infinite;
+}
+
+.faqContainer {
+  margin-top: 10rem;
+  width: 95%;
+  height: 70vh;
+  margin-bottom: 5rem;
+  display: flex;
+}
+.faqContainer .reflectionContainer {
+  width: 45%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-size: 130%;
+  border-radius: 30px;
+  border: 1px solid #606060;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+}
+.faqContainer .reflectionContainer img {
+  z-index: -1;
+  position: absolute;
+  transition: 1s ease;
+  height: 100%;
+}
+.faqContainer .reflectionContainer p {
+  margin-bottom: 2rem;
+}
+.faqContainer .reflectionContainer p i {
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+.faqContainer .faq {
+  width: 45%;
+  height: 100%;
+  margin-left: 5%;
+}
+.faqContainer .faq h2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-family: "Bebas Neue", monospace;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.faqContainer .faq .faqItemContainer {
+  width: 100%;
+  min-height: 5rem;
+  border: 1px solid #606060;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  transition: 0.5s ease;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.faqContainer .faq .faqItemContainer dt {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.faqContainer .faq .faqItemContainer dt::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40%;
+  left: 112%;
+}
+.faqContainer .faq .faqItemContainer dd {
+  margin-left: 10%;
+  margin-bottom: 1rem;
+  width: 80%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.faqContainer .faq .faqItemContainer.active dd {
+  max-height: 400px;
+  overflow: visible;
+}
+
+.findColectPoint {
+  width: 95%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #29452e 0%, #30783c 100%);
+  border-radius: 30px;
+}
+.findColectPoint div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.findColectPoint div h2 {
+  font-family: "Bebas Neue", monospace;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 1rem 0 0 1rem;
+}
+.findColectPoint div p {
+  margin: 0 0 1rem 1rem;
+}
+.findColectPoint a.cta2 {
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: #606060;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+footer a:hover {
+  color: #22ab39;
+}
+
+.cta {
+  width: 25%;
+  padding: 0.5rem 2rem;
+  margin: 0 5rem 6.5rem 0;
+  border-radius: 3rem;
+  background-color: #29452e;
+  color: #fff;
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.cta:hover {
+  background-color: #30783c;
+}
+
+.cta2 {
+  border-radius: 3rem;
+  background-color: #29452e;
+  color: #fff;
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.cta2:hover {
+  background-color: #30783c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", monospace;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.highlight {
+  color: #22ab39;
+}/*# sourceMappingURL=main.css.map */

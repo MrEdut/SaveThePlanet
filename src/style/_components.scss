@@ -1,0 +1,42 @@
+@use "variables";
+
+.cta {
+  width: 25%;
+  padding: 0.5rem 2rem;
+  margin: 0 5rem 6.5rem 0;
+  border-radius: 3rem;
+  background-color: variables.$green-2;
+  color: variables.$white;
+
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: variables.$green-3;
+  }
+}
+
+.cta2 {
+  border-radius: 3rem;
+  background-color: variables.$green-2;
+  color: variables.$white;
+
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: variables.$green-3;
+  }
+}

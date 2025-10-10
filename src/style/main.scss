@@ -1,0 +1,24 @@
+@use "variables";
+@use "layout";
+@use "components";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", monospace;
+}
+
+body {
+  background-color: variables.$main-black;
+  color: variables.$white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.highlight {
+  color: variables.$highlight;
+}
