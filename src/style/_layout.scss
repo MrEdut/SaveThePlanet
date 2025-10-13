@@ -41,6 +41,10 @@ header .menu-desktop {
   }
 }
 
+header .menu-mobile {
+  display: none;
+}
+
 // Introducao
 
 .introducao {
@@ -117,6 +121,7 @@ header .menu-desktop {
 .faqContainer {
   margin-top: 10rem;
   width: 95%;
+  min-height: 800px;
   margin-bottom: 5rem;
   display: flex;
 
@@ -124,7 +129,6 @@ header .menu-desktop {
 
   & .reflectionContainer {
     width: 45%;
-    height: auto;
 
     background-image: linear-gradient(
       to bottom,

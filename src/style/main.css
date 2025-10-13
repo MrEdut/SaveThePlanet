@@ -39,6 +39,10 @@ header .menu-desktop ul li a.logo {
   font-size: 3rem;
 }
 
+header .menu-mobile {
+  display: none;
+}
+
 .introducao {
   position: relative;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.25) 18%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0.8) 100%), url("../images/mainImage.jpg");
@@ -88,12 +92,12 @@ header .menu-desktop ul li a.logo {
 .faqContainer {
   margin-top: 10rem;
   width: 95%;
+  min-height: 800px;
   margin-bottom: 5rem;
   display: flex;
 }
 .faqContainer .reflectionContainer {
   width: 45%;
-  height: auto;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   background-size: 130%;
   border-radius: 30px;
@@ -259,6 +263,130 @@ footer a:hover {
   background-color: #30783c;
 }
 
+/* Tablets / large phones */
+@media (max-width: 991px) {
+  .introducao h1 {
+    font-family: "Bebas Neue", monospace;
+    font-size: 3rem;
+  }
+  .introducao p {
+    width: 70%;
+  }
+  .faqContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .faqContainer .reflectionContainer {
+    display: none;
+  }
+  .faqContainer .faq {
+    width: 100%;
+    min-height: 640px;
+  }
+  .faqContainer .faq h2 {
+    width: 95%;
+  }
+  .faqContainer .faq .faqItemContainer {
+    width: 95%;
+    min-height: 0;
+  }
+  .cta {
+    width: auto;
+    padding: 1.5rem;
+  }
+}
+/* Phones */
+@media (max-width: 767px) {
+  header .menu-desktop {
+    display: none;
+  }
+  header .menu-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+  }
+  header .menu-mobile ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .menu-mobile ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #22ab39;
+    border-right: 1px solid #22ab39;
+  }
+  header .menu-mobile ul li:last-child {
+    border-right: 0;
+  }
+  header .menu-mobile ul a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  header .menu-mobile ul a:hover {
+    color: #22ab39;
+  }
+  header .menu-mobile > a {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-decoration: none;
+    font-size: 3rem;
+    background-color: #212121;
+    padding: 2rem;
+    border: 1px solid #22ab39;
+    border-radius: 100%;
+  }
+  .introducao {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.5) 49%, rgba(0, 0, 0, 0.7) 100%), url("../images/mainImage.jpg");
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .introducao .cta {
+    margin: 4rem 0 6rem 0;
+    font-size: 1.5rem;
+  }
+  .introducao .informationArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .introducao .informationArea h1 br {
+    display: none;
+  }
+  .introducao .informationArea p {
+    text-align: center;
+    width: 90%;
+  }
+  .introducao .nextArea {
+    display: none;
+  }
+}
+/* Small phones */
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,162 @@
+@use "variables";
+
+@media (max-width: 1199px) {
+}
+
+/* Tablets / large phones */
+@media (max-width: 991px) {
+  .introducao {
+    & h1 {
+      font-family: "Bebas Neue", monospace;
+      font-size: 3rem;
+    }
+    & p {
+      width: 70%;
+    }
+  }
+  .faqContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+
+    & .reflectionContainer {
+      display: none;
+    }
+
+    & .faq {
+      width: 100%;
+      min-height: 640px;
+
+      & h2 {
+        width: 95%;
+      }
+
+      & .faqItemContainer {
+        width: 95%;
+        min-height: 0;
+      }
+    }
+  }
+
+  .cta {
+    width: auto;
+    padding: 1.5rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+  header .menu-desktop {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      color: variables.$white;
+      justify-content: space-around;
+      align-items: center;
+
+      & li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-top: 1px solid #22ab39;
+        border-right: 1px solid #22ab39;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      & a {
+        text-decoration: none;
+        color: variables.$white;
+        transition: 0.3s ease;
+        font-size: 2rem;
+        font-weight: 700;
+
+        &:hover {
+          color: variables.$highlight;
+        }
+      }
+    }
+
+    & > a {
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      text-decoration: none;
+      font-size: 3rem;
+      background-color: #212121;
+      padding: 2rem;
+      border: 1px solid #22ab39;
+      border-radius: 100%;
+    }
+  }
+
+  .introducao {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.25) 25%,
+        rgba(0, 0, 0, 0.5) 49%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url("../images/mainImage.jpg");
+
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    & .cta {
+      margin: 4rem 0 6rem 0;
+      font-size: 1.5rem;
+    }
+
+    & .informationArea {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+
+      & h1 br {
+        display: none;
+      }
+
+      & p {
+        text-align: center;
+        width: 90%;
+      }
+    }
+
+    & .nextArea {
+      display: none;
+    }
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+}
