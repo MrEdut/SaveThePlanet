@@ -291,10 +291,11 @@ footer a:hover {
   .faqContainer .faq .faqItemContainer {
     width: 95%;
     min-height: 0;
+    border: 2px solid #606060;
   }
   .cta {
     width: auto;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 /* Phones */
@@ -306,7 +307,7 @@ footer a:hover {
     display: block;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 72px;
     background-color: #212121;
     z-index: 99;
     bottom: 0;
@@ -324,7 +325,7 @@ footer a:hover {
     align-items: center;
   }
   header .menu-mobile ul li {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -339,7 +340,7 @@ footer a:hover {
     text-decoration: none;
     color: #fff;
     transition: 0.3s ease;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
   }
   header .menu-mobile ul a:hover {
@@ -352,9 +353,9 @@ footer a:hover {
     transform: translate(-50%, -50%);
     z-index: 100;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: #212121;
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid #22ab39;
     border-radius: 100%;
   }
@@ -366,7 +367,7 @@ footer a:hover {
   }
   .introducao .cta {
     margin: 4rem 0 6rem 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .introducao .informationArea {
     width: 100%;
@@ -374,6 +375,12 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     margin: 0;
+  }
+  .introducao .informationArea h1 {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1rem;
   }
   .introducao .informationArea h1 br {
     display: none;
@@ -384,6 +391,10 @@ footer a:hover {
   }
   .introducao .nextArea {
     display: none;
+  }
+  footer {
+    height: 152px;
+    margin-bottom: 4rem;
   }
 }
 /* Small phones */
