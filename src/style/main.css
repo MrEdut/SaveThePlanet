@@ -265,6 +265,9 @@ footer a:hover {
 
 /* Tablets / large phones */
 @media (max-width: 991px) {
+  .introducao {
+    height: 80vh;
+  }
   .introducao h1 {
     font-family: "Bebas Neue", monospace;
     font-size: 3rem;
