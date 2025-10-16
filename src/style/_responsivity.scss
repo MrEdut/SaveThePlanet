@@ -63,7 +63,7 @@
     display: block;
     position: fixed;
     width: 100%;
-    height: 72px;
+    height: 73px;
     background-color: #212121;
     z-index: 99;
     bottom: 0;
@@ -89,6 +89,7 @@
 
         border-top: 1px solid #22ab39;
         border-right: 1px solid #22ab39;
+        border-bottom: 1px solid #212121;
 
         &:last-child {
           border-right: 0;
@@ -142,7 +143,7 @@
     flex-direction: column;
 
     & .cta {
-      margin: 4rem 0 6rem 0;
+      margin: 3rem 0 3rem 0;
       font-size: 1rem;
     }
 
@@ -220,6 +221,12 @@
     text-align: center;
     & p {
       max-width: 90%;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .introducao {
+      height: 85vh;
     }
   }
 }
