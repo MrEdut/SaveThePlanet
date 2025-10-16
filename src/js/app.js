@@ -1,4 +1,5 @@
 const faqNav = document.querySelectorAll("#faq");
+const faqSection = document.querySelector(".faq");
 const home = document.querySelector("#home");
 const accordionList = document.querySelectorAll(".faqItemContainer");
 const faqImages = document.querySelectorAll(".reflectionContainer img");
@@ -18,14 +19,14 @@ function accordion(element) {
   });
 }
 
-function smoothScrolling(element, positon) {
+function smoothScrolling(element, elementoTopo) {
   element.addEventListener("click", (event) => {
     event.preventDefault();
     window.scrollTo({
-      top: positon, // posição vertical
-      left: 0, // posição horizontal (opcional)
+      top: elementoTopo.getBoundingClientRect().top - 20,
+      left: 0,
       behavior: "smooth",
-      block: "start", // animação suave
+      block: "start",
     });
   });
 }
@@ -45,9 +46,9 @@ function slider(elementArray) {
 }
 
 faqNav.forEach((element) => {
-  smoothScrolling(element, 896);
+  smoothScrolling(element, faqSection);
 });
-smoothScrolling(home, 0);
+smoothScrolling(home);
 accordion(accordionList);
 
 slider(faqImages);
